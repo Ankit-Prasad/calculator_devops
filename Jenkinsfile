@@ -2,14 +2,10 @@ node {
   def app
   //agent any
     stage('Clean') {
-      steps {
         sh 'mvn clean'
-      }
     }
     stage('Compile') {
-      steps {
         sh 'mvn compile'
-      }
     }
     stage('Test') {
       steps {
