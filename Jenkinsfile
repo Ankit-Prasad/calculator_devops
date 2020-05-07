@@ -24,7 +24,6 @@ pipeline {
       stage('Build Image') {
         app = docker.build("ankitpd/calculator")
       }
-    }
     stage('Push image')
       {
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
