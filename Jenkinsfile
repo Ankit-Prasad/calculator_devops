@@ -1,6 +1,9 @@
 node {
   def app
   //agent any
+    stage('Clone Repository') {
+        checkout scm
+    }
     stage('Clean') {
         sh 'mvn clean'
     }
@@ -8,14 +11,9 @@ node {
         sh 'mvn compile'
     }
     stage('Test') {
-      steps {
         sh 'mvn test'
-      }
     }
-      stage('Clone Repository') {
-        checkout scm
-    }
-      stage('Build Image') {
+    stage('Build Image') {
         app = docker.build("ankitpd/calculator")
       }
     stage('Push image')
