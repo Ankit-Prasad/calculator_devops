@@ -1,8 +1,6 @@
 node {
   def app
   //agent any
-  stages 
-    {
     stage('Clean') {
       steps {
         sh 'mvn clean'
@@ -31,5 +29,4 @@ node {
             //app.push("latest")
         }
       }
-  }
 }
