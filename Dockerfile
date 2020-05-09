@@ -1,4 +1,4 @@
-FROM alpine
+FROM openjdk:8-jdk-alpine
 
 # File Author
 MAINTAINER Ankit Prasad
