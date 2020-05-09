@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM openjdk:8
 
 # File Author
 MAINTAINER Ankit Prasad
