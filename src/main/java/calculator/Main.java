@@ -3,7 +3,7 @@ import calculator.*;
 import java.util.*;
 public class Main
 {
-    public static void main(String args[])
+    public static void main(String args[]) throws Exception
     {
         int flag=0,ch;
         double num1,num2;
