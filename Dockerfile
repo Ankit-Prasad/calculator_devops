@@ -10,4 +10,4 @@ COPY ["target/devops_calculator-1.0-SNAPSHOT.jar", "input_file", "./"]
 
 #ENTRYPOINT runs the as the first command when container is created
 #ENTRYPOINT ["java", "-jar", "devops_calculator-1.0-SNAPSHOT.jar","<","input_file"]
-#RUN java -jar devops_calculator-1.0-SNAPSHOT.jar < input_file
+CMD ["java -jar devops_calculator-1.0-SNAPSHOT.jar < input_file"]
